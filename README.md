@@ -18,7 +18,8 @@ yarn create next-app account-kit-app -e https://github.com/avarobinson/account-k
 ### Get you alchemy api key
 
 - Create a new embedded accounts configuration for an alchemy app in your [dashboard](https://dashboard.alchemy.com/accounts)
-- Replace the api key in the config.ts file
+- Copy sample.env.local to .env.local
+- Replace the environment variable with your new Account Kit config's API key
 
 ### Run the app
 

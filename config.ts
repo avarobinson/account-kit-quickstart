@@ -29,7 +29,7 @@ const uiConfig: AlchemyAccountsUIConfig = {
 
 export const config = createConfig(
   {
-    transport: alchemy({ apiKey: "ALCHEMY_API_KEY" }), // TODO: add your Alchemy API key - https://dashboard.alchemy.com/accounts
+    transport: alchemy({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY }), // TODO: add your Alchemy API key to .env.local - https://dashboard.alchemy.com/accounts
     chain: sepolia,
     ssr: true, // more about ssr: https://accountkit.alchemy.com/react/ssr
     storage: cookieStorage, // more about persisting state with cookies: https://accountkit.alchemy.com/react/ssr#persisting-the-account-state
